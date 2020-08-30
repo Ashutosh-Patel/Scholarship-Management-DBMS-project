@@ -1,0 +1,54 @@
+1) 
+
+DELIMITER //
+CREATE TRIGGER giveScholarship1
+before INSERT ON student
+FOR EACH ROW
+BEGIN
+if (NEW.Caste='SC') OR (NEW.Caste='ST') OR (NEW.Caste='PWD') THEN
+SET new.S_ID=3;
+ELSE
+IF (NEW.Income<500000) AND (NEW.Income>100000) AND (NEW.Caste<>'SC') AND (NEW.Caste<>'ST') AND (NEW.Caste<>'PWD') THEN
+SET new.S_ID=2;
+ELSE
+IF (NEW.Income<100000) AND (NEW.Caste<>'SC') AND (NEW.Caste<>'ST') AND (NEW.Caste<>'PWD') AND (NEW.CPI>=7.50) AND (NEW.Year>1) THEN
+SET new.S_ID=1;
+ELSE
+IF (NEW.Income>500000) AND (NEW.Caste<>'SC') AND (NEW.Caste<>'ST') AND (NEW.Caste<>'PWD') THEN 
+SET new.S_ID=NULL;
+END IF;
+END IF;
+END IF;
+END IF;
+END //
+DELIMITER ;
+
+2)
+
+DELIMITER //
+CREATE TRIGGER remarkUpdate
+AFTER INSERT ON payment
+FOR EACH ROW
+BEGIN
+UPDATE student
+SET PAYMENT_ID=NEW.PAYMENT_ID,
+Remarks='Approved',
+S_ID=NEW.S_ID
+WHERE Roll_no=NEW.ROLL_NO;
+END //
+DELIMITER ;
+
+3)
+
+DELIMITER //
+CREATE TRIGGER deleteEntry1
+BEFORE DELETE ON scholarship
+FOR EACH ROW
+BEGIN
+DELETE FROM student
+WHERE S_ID=OLD.S_ID;
+
+DELETE FROM officers
+WHERE S_ID = OLD.S_ID;
+END //
+DELIMITER ;

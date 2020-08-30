@@ -1,0 +1,44 @@
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (1,18001009,'4778f234ew4ker35',66667);
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (2,18001004,'4778f2343dker56',66667);
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (3,18001005,'4778h3349djnr33',112000);
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (4,18002010,'4778q2349dker84',100000);
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (5,18002021,'4778d2349dker78',100000);
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (6,18002033,'4778l2349dker05',66667);
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (7,18003036,'4778u2349dker45',100000);
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (8,18003037,'4778o2349dker65',112000);
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (9,18003045,'477842349dker70',100000);
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (10,18003041,'477sf2349dker90',66667);
+INSERT INTO payment(PAYMENT_ID, Roll_no, TRANSACTION_ID, AMOUNT) VALUES (11,18002048,'477kf2349dker89',66667);
+
+
+
+INSERT INTO officers(Officer_ID, Officer_name, S_ID, Designation, Email) VALUES (101,'Rajesh Mishra',1,'Head','raj123@gmail.com');
+INSERT INTO officers(Officer_ID, Officer_name, S_ID, Designation, Email) VALUES (102,'Amit Raj',2,'Advisor','amit123@gmail.com');
+INSERT INTO officers(Officer_ID, Officer_name, S_ID, Designation, Email) VALUES (103,'Pankhudi Sharma',3,'Head','pankhu4455@gmail.com');
+INSERT INTO officers(Officer_ID, Officer_name, S_ID, Designation, Email) VALUES (104,'Manish Bhatia',4,'Consultant','manish22224@gmail.com');
+INSERT INTO officers(Officer_ID, Officer_name, S_ID, Designation, Email) VALUES (105,'Aditya Patel',5,'Head','adi23@gmail.com');
+INSERT INTO officers(Officer_ID, Officer_name, S_ID, Designation, Email) VALUES (106,'Shalini Gaur',6,'Advisor','sgaur67@gmail.com');
+
+
+
+INSERT INTO scholarship(S_ID, SCHOLARSHIP_NAME, DURATION_MONTHS, BENEFIT_AMT, MIN_INCOME, MAX_INCOME) VALUES (1,'MCM',6,112000,0,100000);
+INSERT INTO scholarship(S_ID, SCHOLARSHIP_NAME, DURATION_MONTHS, BENEFIT_AMT, MIN_INCOME, MAX_INCOME) VALUES (2,'Fee Remission',6,66670,100000,500000);
+INSERT INTO scholarship(S_ID, SCHOLARSHIP_NAME, DURATION_MONTHS, BENEFIT_AMT, MIN_INCOME) VALUES (3,'SC Quota Based',6,100000,0);
+
+
+
+
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18001004,'Akshay Raj',2,'M',449000,'OBC','araj22@gmail.com','109900223450','000032CNRB',1,'Approved');
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18001005,'Shreya Garg',1,'F',32000,'GEN','shreya4423@gmail.com','109900230500','000032IDIB',3,'Approved');
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18002010,'Pranjal Somuwakar',3,'M',85000,'SC','pranjals@gmail.com','109900240560','000055HHJB',4,'Approved');
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18002021,'Gaurav Nagar',3,'M',632000,'SC','gauravn@gmail.com','109900234930','000067CNRB',5,'Approved');
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18002033,'Sneha Chauhan',2,'F',367500,'GEN','snehac@gmail.com','109900334100','000032CNRB',6,'Approved');
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18003036,'Shruti Agrawal',3,'F',445000,'SC','sagrawal@gmail.com','109900405100','000067HHDB',7,'Approved');
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18003037,'Harshit Yadav',1,'M',32500,'OBC','harshitc@gmail.com','109900233950','000032IDIB',8,'Approved');
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18003045,'Akshay Prakash',3,'M',289000,'SC','aprakash22@gmail.com','109900538330','000032CNRB',9,'Approved');
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18003041,'Abhinav Bindra',2,'F',32550,'GEN','abhi23@gmail.com','109900727370','000032IDIB',10,'Approved');
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18002048,'Kapil Bajaj',2,'M',44000,'OBC','kaps@gmail.com','109900445330','000055HHJB',11,'Approved');
+INSERT INTO student(Roll_no, Name, S_ID, Gender, Income, Caste, Email, Bank_AC, IFSC, PAYMENT_ID, Remarks) VALUES (18001009,'Samyak Jain',2,'M',89000,'GEN','samyakn@gmail.com','109900484830','000067CNRB',1,'Approved');
+INSERT INTO student(Roll_no, Name,Gender, Income, Caste, Email, Bank_AC, IFSC) VALUES (18002054,'Krati Chauhan','F',883500,'GEN','kratic@gmail.com','109900333100','000032CNRB');
+INSERT INTO student(Roll_no, Name, Gender, Income, Caste, Email, Bank_AC, IFSC) VALUES (18003033,'Shivani Singh','F',1000000,'OBC','ssingh@gmail.com','109900400400','000067HHDB');
+INSERT INTO student(Roll_no, Name, Gender, Income, Caste, Email, Bank_AC, IFSC) VALUES (18001049,'Yashraj Yadav','M',562500,'GEN','yy7475@gmail.com','109900229950','000032IDIB');

@@ -1,0 +1,35 @@
+1)
+
+delimiter //
+CREATE PROCEDURE display_student()
+BEGIN
+SELECT * FROM student;
+end //
+delimiter ;
+
+2)
+
+delimiter //
+CREATE PROCEDURE display_payment()
+BEGIN
+SELECT * FROM payment;
+end //
+delimiter ;
+
+3)
+
+delimiter //
+CREATE PROCEDURE display_officer()
+BEGIN
+SELECT * FROM officers;
+end //
+delimiter ;
+
+4)
+
+delimiter //
+CREATE PROCEDURE display_scholarship()
+BEGIN
+SELECT * FROM scholarship;
+end //
+delimiter ;
